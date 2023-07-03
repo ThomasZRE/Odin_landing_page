@@ -1,20 +1,27 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #1f2937;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
     display: flex;
+    margin: 0;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .header {
-    padding: 0 15%;
+    padding: 10px 15%;
+    background-color: #1f2937;
 }
 
 .content1, .content3 {
     color: black;
     background-color: white;
     padding: 25px 20%;
+}
+
+.content.info {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1f2947;
 }
 
 .content2 {
@@ -29,13 +36,15 @@ body {
 
 .content2 .author {
     align-self: flex-end;
+    color: black
 }
 
 .container3 {
     display: flex; 
     color: white;
-    background-color: cornflowerblue;
-    padding: 30px 150px;
+    background-color: #3882f6;
+    border-radius: 5px;
+    padding: 30px 130px;
     justify-content: space-between;
 }
 
@@ -54,30 +63,43 @@ body {
     justify-content: space-between;
 }
 
-.head {
-    display: flex;
-    justify-content: space-between;
-    border-color: none;
+.navbar .logo {
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight:500;
 }
 
-.head .text {
+.head.text {
     margin-right: 25px;
+    color: grey;
+}
+
+.head.title, .head.image{
+    flex: 1;
 }
 
 .head .image {
+    border: 1px solid green;
     background-color: #e5e7eb;
-    min-width: 45%;
-    min-height: 100%;
-    margin-left: 25px;
+    margin: 0;
+    max-height: 30vh;
+    flex-basis: auto;
+    margin-left: 13%;
 }
 
-.head image {
-    height: 100%;
-    width: 50%;
+.title h1 {
+    font-size: 48px;
+    font-weight:800;
+    color: #f9faf8;
+}
+ 
+.title.text, .navbar.links {
+    font-size: 18px;
+    color: #E5E7Eb;
 }
 
-.text {
-    color: #F8FAF8;
+.title .text {
+    margin-bottom: 10px; 
 }
 
 .content1 {
@@ -89,17 +111,25 @@ body {
 .content1 .info {
     color: #1f2937;
     font-size: 32px;
-    font-weight: bold;
-
+    font-weight:800;
+    margin-bottom: 20px;
 }
 
 .image.container {
-    height: 200px;
+    height: 100px;
     width: 150px;
-    margin: 5px 20px;
+    margin: 20px 100px;
 }
 
-ul, h4, p {
+.footer {
+    display: flex;
+    background-color: #1f2937;
+    padding: 25px 0;
+    align-content: center;
+    justify-content: center;
+}
+
+ul, h3, p {
     margin: 0;
     padding: 0;
 }
@@ -111,10 +141,6 @@ ul {
 
 li {
     margin: 0 15px;
-}
-
-img {
-    border: 5px solid lightgreen;
 }
 
 a { 
@@ -133,11 +159,16 @@ p .title.text{
     color: #E5E7EB;
 }
 
+.content-sign {
+    border: 2px solid white;
+    padding: 0px 30px;
+}
+
 button {
     font-weight: bold;
-    padding: 5px 30px;
+    background-color: #3882f6;
+    padding: 8px 30px;
     border-radius: 5px;
-    background-color: cornflowerblue;
     color: inherit;
-    border-color: inherit;
+    border: none;
 }
